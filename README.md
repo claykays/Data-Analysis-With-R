@@ -1,7 +1,7 @@
 # Data-Analysis-With-R
 
 
-# Sales Data Analysis In R including visualisations
+## Sales Data Analysis In R including visualisations
 
 This Analysis forms my first project in  R which i will utilize the "tidyverse","dplyr","ggplot2" and "tidyr" libraries to manipulate data and produce some visuals.
 
