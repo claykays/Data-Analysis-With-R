@@ -1,8 +1,6 @@
 # Data-Analysis-With-R
 
 
-
-
 # Sales Data Analysis In R including visualisations
 
 This Analysis forms my first project in  R which i will utilize the "tidyverse","dplyr","ggplot2" and "tidyr" libraries to manipulate data and produce some visuals.
@@ -146,7 +144,11 @@ Here we get a view of all Sales done for each City
         x="Category",
         y="Total Sales")
 ```
+
+
 ### Sales By City by category(grid)
+
+
 ```{r Sales By City }
 ggplot(data = my_sales_clean_data)+ geom_col(mapping = aes(x= category, y= total_price, fill =product))+
    facet_grid(~city)+
@@ -160,6 +162,7 @@ ggplot(data = my_sales_clean_data)+ geom_col(mapping = aes(x= category, y= total
 
 
 ### Sales By order Date 
+
 Total sales each month for all combined products each month
 
 ```{r}
@@ -177,7 +180,10 @@ Total sales each month for all combined products each month
         x="Product Category",
         y="Total Sales")
 ```
+
 ### Month Sales By Product(multiple lines) (2020)
+
+
 ```{r Sales by date 2020 by products}
 my_sales_clean_data %>% 
    mutate(month_name = month(order_date, label = TRUE)) %>% 
@@ -194,7 +200,11 @@ my_sales_clean_data %>%
         x="Product Category",
         y="Total Sales")
 ```
+
+
 ### Month Sales By Category(multiple lines) (2020)
+
+
 ```{r Sales by date 2020 by Category}
 my_sales_clean_data %>% 
    mutate(month_name = month(order_date, label = TRUE)) %>% 
@@ -211,7 +221,10 @@ my_sales_clean_data %>%
         x="Product Category",
         y="Total Sales")
 ```
+
+
 ### Month Sales By Category (Pie) (2020)
+
 
 ```{r}
 my_sales_clean_data %>%
@@ -234,6 +247,7 @@ my_sales_clean_data %>%
 
 
 ## The End
+
 
 
 
